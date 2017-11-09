@@ -1,4 +1,4 @@
-require.pry
+# require.pry
 #
 # def good_practices
 #   game_hash.each do |location, team_data|
@@ -196,7 +196,7 @@ def big_shoe_rebounds
   biggest_shoe = []
   game_hash.each do |team, data|
     data[:players].each do |player, stats|
-      binding.pry
+
       end
     end
   end
