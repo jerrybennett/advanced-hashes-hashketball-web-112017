@@ -134,7 +134,6 @@ def game_hash
   }
 end
 
-
 def num_points_scored(name)
   game_hash.each do |team, data|
     data[:players].each do |k, v|
@@ -143,4 +142,8 @@ def num_points_scored(name)
       end
     end
   end
+end
+
+def shoe_size()
+
 end
