@@ -136,9 +136,9 @@ end
 
 def num_points_scored(name)
   game_hash.each do |team, data|
-    data[:players].each do |k, v|
-      if name == k
-        return v[:points]
+    data[:players].each do |name, info|
+      if name == name
+        return info[:points]
       end
     end
   end
@@ -146,9 +146,9 @@ end
 
 def shoe_size(name)
   game_hash.each do |team, data|
-    data[:players].each do |k, v|
-      if name == k
-        return v[:shoe]
+    data[:players].each do |name, info|
+      if name == name
+        return info[:shoe]
       end
     end
   end
