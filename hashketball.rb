@@ -181,3 +181,9 @@ def player_numbers(name)
   end
   return arr
 end
+
+def player_stats(player)
+  game_hash.each do |team, data|
+    
+  end
+end
