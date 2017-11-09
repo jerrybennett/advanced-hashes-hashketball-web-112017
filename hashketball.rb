@@ -169,3 +169,15 @@ def team_names
   end
   return arr
 end
+
+def player_numbers(team)
+  arr = []
+  game_hash.each do |team, data|
+    if team == data[:team_name]
+      data[:players].each do |name, info|
+        arr << info[:number]
+      end
+    end
+  end
+  return arr.sort
+end
