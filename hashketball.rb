@@ -195,12 +195,10 @@ end
 def big_shoe_rebounds
   biggest_shoe = []
   game_hash.each do |team, data|
-    data[:players].each do |name, info|
-      biggest_shoe << info[:shoe]
-      info.each do |k, v|
-        if k[:shoe] == biggest_shoe.max
-          return k[:rebounds]
-        end
+    data[:players].each do |k, v|
+      # biggest_shoe << info[:shoe]
+      k.each do |k, v|
+
       end
     end
   end
