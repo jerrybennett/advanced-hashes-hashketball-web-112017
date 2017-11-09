@@ -179,5 +179,5 @@ def player_numbers(team)
       end
     end
   end
-  return arr.sort
+  return arr
 end
