@@ -164,8 +164,6 @@ end
 
 def team_names
   game_hash.each do |team, data|
-    team.each do |i|
-      return i[0]
-    end
+    return data[0]
   end
 end
