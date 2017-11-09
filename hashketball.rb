@@ -163,5 +163,11 @@ def team_colors(name)
 end
 
 def team_names(name)
-  
+  teams = []
+  game_hash.each do |team, data|
+    team.each do |k, v|
+      teams << k[:team_name]
+    end
+  end
+  return teams
 end
